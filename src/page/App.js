@@ -6,14 +6,18 @@ import SearchBar from '../components/SearchBar';
 import FlickityBar from '../components/FlickityBar';
 
 class App extends React.Component{
+  componentDidMount(){
+    document.title = "Phim Hoạt Hình Trung Quốc";
+  }
+
   render(){
     return(
       <>
-        <div className="App">
+        <div className="container">
           <Navbar />
           <SearchBar />
           <FlickityBar />
-      </div>
+        </div>
       </>
     )
   }

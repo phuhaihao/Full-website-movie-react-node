@@ -5,11 +5,13 @@ import {faSearch } from '@fortawesome/fontawesome-free-solid';
 class SearchBar extends React.Component {
     render(){
         return(
-            <div className="search-container">
-                <button className="search-button">
+            <div className="search-container row">
+                <button 
+                    className="search-button col-sm-6"
+                >
                     <FontAwesomeIcon icon={faSearch} />
                 </button>
-                <input type="text" placeholder="Search.."></input>
+                <input type="text" placeholder="Search.." className="col-sm-6"></input>
             </div>
         )
     }

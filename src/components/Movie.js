@@ -34,18 +34,20 @@ class Movie extends React.Component {
                 src: "https://hhpanda.tv/images/1635909521.png",
             },
         ];
-        return(
-            this.state.map((item, index)=>{
-                return (<a href="#hello">
-                    <img
-                        src={item.src}
-                        alt={item.name}
-                        title={item.name}
-                    >
-                    </img>
-                </a>)
-            })
-        )
+        if(this.state && this.state.length > 0){
+            return(
+                this.state.map((item, index)=>{
+                    return (<a href="#hello">
+                        <img
+                            src={item.src}
+                            alt={item.name}
+                            title={item.name}
+                        >
+                        </img>
+                    </a>)
+                })
+            )
+        }
     }
 }
 

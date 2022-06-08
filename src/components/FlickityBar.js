@@ -5,12 +5,12 @@ import Movie from './Movie';
 class FlickityBar extends React.Component {
     render(){
         const flickityOptions = {
-            initialIndex: 1
+            initialIndex: 3
         };
         
         return(
             <Flickity
-                className={'carousel'} // default ''
+                className={'carousel row d-flex justify-content-center'} // default ''
                 elementType={'div'} // default 'div'
                 options={flickityOptions} // takes flickity options {}
                 disableImagesLoaded={true} // default false
