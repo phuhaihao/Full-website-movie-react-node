@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from '../assets/img/logo.svg';
 import '../assets/scss/App.scss';
 import Navbar from '../assets/layouts/Navbar'
 import SearchBar from '../components/SearchBar';
-import FlickityBar from '../components/FlickityBar';
+import Home from './Nav/Home';
 
 class App extends React.Component{
   componentDidMount(){
@@ -16,7 +15,8 @@ class App extends React.Component{
         <div className="container">
           <Navbar />
           <SearchBar />
-          <FlickityBar />
+          <Home />
+
         </div>
       </>
     )
